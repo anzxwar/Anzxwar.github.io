@@ -192,3 +192,8 @@
                 <img src="./assets/images/logo-6-color.png" alt="client logo">
               </a>
             </li>
+             </ul>
+
+        </section>
+
+      </article>
