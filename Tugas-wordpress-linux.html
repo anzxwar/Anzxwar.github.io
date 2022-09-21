@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tugas</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!--
+      - #MAIN
+    -->
+  
+    <main>
+  
+      <!--
+        - #SIDEBAR
+      -->
+  
+      <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+  
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Anwar Alif Katresna" width="80">
+          </figure>
+  
+          <div class="info-content">
+            <h1 class="name" title="My Name">Anwar Alif Katresna</h1>
+  
+            <p class="title">Cyber Security</p>
+          </div>
+  
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+  
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+  
+        </div>
+  
+        <div class="sidebar-info_more">
+  
+          <div class="separator"></div>
+  
+          <ul class="contacts-list">
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+  
+                <a href="" class="contact-link">alif.katresna9@gmail.com</a>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+  
+                <a href="" class="contact-link">- </a>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+  
+                <time datetime="01-07-2002">July 01, 2002</time>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+  
+                <address>Batam, Kepulauan Riau, Indonesia</address>
+              </div>
+  
+            </li>
+  
+          </ul>
+  
+          <div class="separator"></div>
+  
+          <ul class="social-list">
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </aside>
+
+        <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+  
+        <nav class="navbar">
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>Tugas</button>
+          </ul>
+  
+        </nav>
+
+        
+ <!--
+        - #BLOG
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Install WordPress di Ubuntu Server</h2>
+        </header>
+        <section class="about-text">
+            <p>
+            <b> Setup :<br />
+            
+             1. Virtual Box<br /> 
+             2. ISO Ubuntu Server<br />
+            </b></p>
+
+            <p><h3>Install VirtualBox dan Ubuntu Server</h3>
+             Untuk Instalasi VirtualBox dan Ubuntu Server bisa dilihat di link berikut:
+             <a href="https://linuxhint.com/install-ubuntu22-04-virtual-box/"target="_blank" rel="noopener noreferrer">https://linuxhint.com/install-ubuntu22-04-virtual-box/</a> 
+             Setelah Melakukan instalasi lanjut dengan SetUp VM Server & VM Database.<br />
+            <b>SetUp Server:</b><br />
+             1. Lakukan Update & Upgrade:<br />
+             Dengan Command:<br />
+             <img src="./assets/images/apt-update.PNG" > 
+             <img src="./assets/images/apt-upgrade.PNG"><br/>
+             2. Selanjutnya install web server apache2<br/>
+             <img src="./assets/images/install-apache.PNG"><br/>
+             3. Test apakah status web server sudah aktif dengan menjalankan command: <img src="./assets/images/status apache2.PNG"><br/>
+             dan juga bisa dengan memasukan ip localhost ke browser <img src="./assets/images/apache2.PNG" width="800"><br/>
+             4. Selanjutnya install PHP dan MysQl-client. <img src="./assets/images/phpmysql.PNG"> <img src="./assets/images/mysql-client.PNG"><br/>
+             <b>Lanjut dengan SetUp VM Database:</b><br/>
+             1. Lakukan Update & Upgrade sama seperti server sebelumnya.<br/>
+             2. Selanjutnya install Mysql-server dengan command: <img src="./assets/images/install-mysql.PNG"> <b>*Note: untuk instalasi lebih lanjut mysql-server bisa dilihat di link berikut:</b>
+             <a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04"target="_blank" rel="noopener noreferrer">https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04</a>
+            </p>
+
+            <p>
+              <h2>Menghubungkan Server dengan database</h2>
+             1. SetUp IP ke-2 VM, disini saya menggunakan 2 Network Adapter yaitu, HostOnly & NAT di kedua VM.<br/>
+             untuk konfigurasi ip ke static bisa menggunakan command: <img src="./assets/images/ipsetting.PNG"> <img src="./assets/images/staticip.PNG">
+             2. Save dengan menekan CTRl+x dan y lalu ENTER, dan jalankan command: <b>sudo netplan apply</b> untuk melihat apakah ada error.<br/>
+             3. Ulangi untuk VM ke-2.<br/>
+             4. Lanjut dengan masuk ke mysql dengan akses root, lalu membuat user & database mysql. <img src="./assets/images/create user-database.PNG">
+             <b>note: Pada bagian IP isi dengan IP web server.</b><br/>
+             5. lanjut dengan setting Bind address di mysqld.cnf. Ganti dengan IP database <img src="./assets/images/mysql.cnf.PNG">
+             <img src="./assets/images/bind-address.PNG">
+             6. Test login mysql di VM webserver: <img src="./assets/images/reomot-control.PNG">
+             Jika berhasil maka vm server & database sudah terhubung.</p>
+
+             <p>
+              <h3>Instalasi Wordpress CMS</h3>
+              Untuk melakukan wordpress bisa dilihat di website berikut: 
+              <a href="https://www.digitalocean.com/community/tutorials/install-wordpress-on-ubuntu" target="_blank" rel="noopener noreferrer">How To Install Wordpress On Ubuntu</a>
+              <br/>
+             <h3> Menambahkan 2 wordpress atau lebih di 1 vm</h3>
+             Untuk menambah web wordpress di 1 vm bisa dilakukan dengan cara berikut:<br/>
+             1. Download wordpress. <img src="./assets/images/install-wordpresssms.PNG">
+             lalu extract file wordpress. <img src="./assets/images/tar extract.PNG">
+             2. copy file yang di extract tadi ke /var/www/html. <img src="./assets/images/cp-wp1.PNG">
+             3. untuk menambahkan wordpress ke-2 dan ke-3 copy kembali file extract wordpres tadi ke folder baru di /var/www/html/[nama-folder-baru]. contoh: 
+             <img src="./assets/images/cp-wp23.PNG">
+             4. Jalankan perintah di bawah ini untuk mengubah kepemilikan direktori 'wordpress'. <img src="./assets/images/chown.PNG">
+             5. Ganti file permissions dari folder Wordpress. <img src="./assets/images/chmod.PNG">
+             6. Buat direktori 'Uploads'. <img src="./assets/images/mkdir.PNG">
+             7. Ganti file permissions dari direktori 'Uploads' <img src="./assets/images/chown-uploads.PNG">
+             8. Buka browser dan masukan url ip address server <b>ip-server/folder-wordpress</b> misal:<br/>
+             <b>"ip-server/wordpress" or "ip-server/wordpress2"</b> <img src="./assets/images/wp-1.PNG" width="800"><br/>
+
+             <b>Lanjut dengan setting wordpress</b><br/>
+             Masukan nama database, user, password, serta ip database sesuai dengan yang telah kita buat sebelumnya.<img src="./assets/images/wp1setting.PNG" width="800"> Lalu buat user dan judul untuk website <img src="./assets/images/user-wp1.PNG" width="800">
+             Dan akhrinya wordpress siap dijalankan <img src="./assets/images/succes.PNG" width="800">
+
+             <h4>Ulangi langkah yang sama untuk web wordpress ke-2 dan seterusnya.</h4>
+
+            </p>
+
+        </section>
+  
+</body>
