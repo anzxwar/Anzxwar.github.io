@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anwar - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--
+      - #MAIN
+    -->
+  
+    <main>
+  
+      <!--
+        - #SIDEBAR
+      -->
+  
+      <aside class="sidebar" data-sidebar>
+  
+        <div class="sidebar-info">
+  
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Anwar Alif Katresna" width="80">
+          </figure>
+  
+          <div class="info-content">
+            <h1 class="name" title="My Name">Anwar Alif Katresna</h1>
+  
+            <p class="title">Cyber Security</p>
+          </div>
+  
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+  
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+  
+        </div>
+  
+        <div class="sidebar-info_more">
+  
+          <div class="separator"></div>
+  
+          <ul class="contacts-list">
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+  
+                <a href="" class="contact-link">alif.katresna9@gmail.com</a>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+  
+                <a href="" class="contact-link">- </a>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+  
+                <time datetime="01-07-2002">July 01, 2002</time>
+              </div>
+  
+            </li>
+  
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+  
+                <address>Batam, Kepulauan Riau, Indonesia</address>
+              </div>
+  
+            </li>
+  
+          </ul>
+  
+          <div class="separator"></div>
+  
+          <ul class="social-list">
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </aside>
+
+
+
+
+
+
+
+
+ <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+   <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+  
+        <nav class="navbar">
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>Tugas</button>
+          </ul>
+  
+        </nav>
+
+
+    <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Query MySQL Analysis</h2>
+        </header>
+
+        <section class="about-text">
+
+            <h3>Query UNION</h3>
+            <p>
+                Operator UNION digunakan untuk menggabungkan himpunan hasil dari dua atau lebih statement SELECT.<br/>
+                Setiap statement SELECT di dalamnya UNION harus memiliki jumlah kolom yang sama<br/>
+                Kolom juga harus memiliki tipe data yang serupa
+                Kolom di setiap statement SELECT juga harus dalam urutan yang sama<br/>
+                Sintaks UNION:
+                <img src="./assets/images/query-kolom.PNG">
+                <img src="./assets/images/query-kolom2.PNG">
+            </p>
+            <h3>Query SLEEP/WAIT</h3>
+            <p>
+                Query SLEEP di Database MySQL dapat dilihat ketika kita menggunakan SHOW FULL PROCESSLIST. Ini menunjukkan query yang sedang berjalan pada database.
+                Ketika koneksi database dibuat, sesi juga dibuat di server database secara bersamaan, tetapi jika koneksi dan sesi tersebut tidak ditutup dengan benar,
+                maka query masuk ke mode tidur/sleep setelah waktu tunggu selesai.
+                Jadi, query SLEEP adalah query yang menunggu batas waktu berakhir. Itu berarti query yang membutuhkan waktu untuk dijalankan dan dihentikan masuk dalam status sleep/tidur.
+                Efek dari sejumlah besar kueri MYSQL – SLEEP :<br/>
+                - Peningkatan konsumsi sumber daya CPU dan memori (RAM, cache, dan prosesor).<br/>
+                - Slowing down of server.<br/>
+                - Peningkatan downtime untuk situs web -hacker mencoba memperlambat situs web menggunakan sleep SQL Injections. 
+             <h4>Mengapa Proses SLEEP MySQL berlangsung?</h4>
+             Koneksi menunggu kueri MYSQL baru, yang lebih dikenal sebagai proses tidur/sleep, terjadi jika dalam pengkodean koneksi persisten ke database digunakan atau jika koneksi database tidak ditutup dengan benar.<br/>
+             Jadi, Anda mendapatkan koneksi dalam keadaan sleep/tidur ketika skrip PHP terhubung ke MySQL, kueri dijalankan dan koneksi dibiarkan terbuka tanpa memutuskan sambungan dari server.<br/>
+             Hingga utas/thread mati, buffer pra-utas/thread apa pun akan disimpan dalam memori selama 28.800 detik di MySQL secara default.
+             Jadi, ketika banyak proses PHP tetap terhubung tanpa melakukan apa pun di database, Anda berakhir dengan banyak proses dalam keadaan tidur.
+             <h4>Bagaimana cara mengatasi masalah ini?</h4>
+             Untuk mengatasi masalah perintah SLEEP SQL ini, MySQL menggunakan dua parameter:<br/>
+             <b>interactive_ timeout and wait_ timeout.</b><br/>
+             Ini memerlukan nilai tertentu yang akan diatur untuk membantu kueri run-up ke waktu yang ditetapkan tersebut.
+             Secara default, kedua parameter telah menetapkan nilai sebagai 28800 detik (yaitu 8 jam).<br/>
+             Untuk mengatur parameter ini di MySQL tanpa memulai ulang, jalankan di bawah dua perintah di terminalnya:<br/>
+             <img src="./assets/images/wait-interactive.PNG">
+             Lalu kita perlu menambahkan parameter diatas kedalam file <b>mysqld.cnf</b>, dibawah bagian [mysqld],
+             sehingga mereka dapat berlaku setelah memulai ulang server database.
+             <img src="./assets/images/mysqld.cnf.PNG" width="500">
+             Dan tambahkan baris ini:
+             <img src="./assets/images/mysqld.PNG">
+             di mana waktu dalam hitungan detik.
+             Dengan demikian, koneksi akan ditutup secara otomatis setelah menunggu selama 3600 detik.<br/>
+
+             <h3>Comment Query</h3>
+             Comment quary digunakan untuk menjelaskan bagian dari SQL statement, atau untuk mencegah eksekusi SQL statement.
+             Single line comments dimulai dengan <b>--</b>.<br/>
+             
+             Teks apa pun antara -- dan akhir baris akan diabaikan (tidak akan dieksekusi).
+             <img src="./assets/images/query-comment.PNG">
+             Ketika kita menambahkan query COMMENT <b>(--)</b> di depan statement SELECT, statement SELECT tersebut diabaikan.<br/>
+             <h4>Multi Line Comments</h4>
+             Multi-line comments start with /* and end with */.<br/>
+             Semua text diantara /* and */ akan diabaikan.<br/>
+             The following example uses a multi-line comment as an explanation:<br/>
+             <img src="./assets/images/query-multicomments.PNG">
+            
+            
+             
+            </p>
+
+</body>
+
+</html>
