@@ -208,25 +208,32 @@
                 <img src="./assets/images/query-kolom.PNG">
                 <img src="./assets/images/query-kolom2.PNG">
             </p>
+            <h3>Query SELECT</h3>
+            <p>
+              Statement ini digunakan untuk memilih data dari database.<b>SELECT</b>
+              Data yang dikembalikan disimpan dalam tabel hasil, yang disebut kumpulan hasil.<br/>
+              <b>Syntak SELECT:</b>
+              <img src="./assets/images/query-select.PNG">
+            </p>
             <h3>Query SLEEP/WAIT</h3>
             <p>
                 Query SLEEP di Database MySQL dapat dilihat ketika kita menggunakan SHOW FULL PROCESSLIST. Ini menunjukkan query yang sedang berjalan pada database.
                 Ketika koneksi database dibuat, sesi juga dibuat di server database secara bersamaan, tetapi jika koneksi dan sesi tersebut tidak ditutup dengan benar,
                 maka query masuk ke mode tidur/sleep setelah waktu tunggu selesai.
                 Jadi, query SLEEP adalah query yang menunggu batas waktu berakhir. Itu berarti query yang membutuhkan waktu untuk dijalankan dan dihentikan masuk dalam status sleep/tidur.
-                Efek dari sejumlah besar kueri MYSQL – SLEEP :<br/>
+                Efek dari pengguanaan sejumlah besar query MYSQL – SLEEP :<br/>
                 - Peningkatan konsumsi sumber daya CPU dan memori (RAM, cache, dan prosesor).<br/>
                 - Slowing down of server.<br/>
                 - Peningkatan downtime untuk situs web -hacker mencoba memperlambat situs web menggunakan sleep SQL Injections. 
              <h4>Mengapa Proses SLEEP MySQL berlangsung?</h4>
-             Koneksi menunggu kueri MYSQL baru, yang lebih dikenal sebagai proses tidur/sleep, terjadi jika dalam pengkodean koneksi persisten ke database digunakan atau jika koneksi database tidak ditutup dengan benar.<br/>
-             Jadi, Anda mendapatkan koneksi dalam keadaan sleep/tidur ketika skrip PHP terhubung ke MySQL, kueri dijalankan dan koneksi dibiarkan terbuka tanpa memutuskan sambungan dari server.<br/>
+             Koneksi menunggu query MYSQL baru, yang lebih dikenal sebagai proses tidur/sleep, terjadi jika dalam pengkodean koneksi persisten ke database digunakan atau jika koneksi database tidak ditutup dengan benar.<br/>
+             Jadi, Anda mendapatkan koneksi dalam keadaan sleep/tidur ketika skrip PHP terhubung ke MySQL, query dijalankan dan koneksi dibiarkan terbuka tanpa memutuskan sambungan dari server.<br/>
              Hingga utas/thread mati, buffer pra-utas/thread apa pun akan disimpan dalam memori selama 28.800 detik di MySQL secara default.
              Jadi, ketika banyak proses PHP tetap terhubung tanpa melakukan apa pun di database, Anda berakhir dengan banyak proses dalam keadaan tidur.
              <h4>Bagaimana cara mengatasi masalah ini?</h4>
              Untuk mengatasi masalah perintah SLEEP SQL ini, MySQL menggunakan dua parameter:<br/>
              <b>interactive_ timeout and wait_ timeout.</b><br/>
-             Ini memerlukan nilai tertentu yang akan diatur untuk membantu kueri run-up ke waktu yang ditetapkan tersebut.
+             Ini memerlukan nilai tertentu yang akan diatur untuk membantu query run-up ke waktu yang ditetapkan tersebut.
              Secara default, kedua parameter telah menetapkan nilai sebagai 28800 detik (yaitu 8 jam).<br/>
              Untuk mengatur parameter ini di MySQL tanpa memulai ulang, jalankan di bawah dua perintah di terminalnya:<br/>
              <img src="./assets/images/wait-interactive.PNG">
