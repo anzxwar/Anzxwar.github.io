@@ -188,26 +188,26 @@
               <i>Access Control</i> menjaga agar informasi rahasia—seperti data pelanggan dan kekayaan intelektual—tidak dicuri oleh aktor jahat atau pengguna tidak sah lainnya. Ini juga mengurangi risiko eksfiltrasi data oleh karyawan dan mencegah ancaman berbasis web. Alih-alih mengelola izin secara manual, sebagian besar organisasi yang digerakkan oleh keamanan bersandar pada solusi <b>Manajemen</b> identitas dan akses untuk menerapkan kebijakan <i>Access Control</i>.
             </P>
             <h1>Berbagai Jenis Access Control</h1>
-              <h3>Discretionary access control (DAC).</h3>
+              <h3>Discretionary Access Control (DAC).</h3>
               <p>
-                Dalam model DAC, setiap objek dalam system yang dilindungi memiliki pemilik, dan pemilik memberikan akses kepada pengguna atas kebijakan mereka sendiri. DAC menyediakan control kasus per kasus atas sumber daya. Dari system ini memungkinkan penyebaran hak akses dapat dibatasi Contohnya pada MySQL user yang diberikan hak akses penuh dan hak option(grant option) dapat membagikan hak akses tertentu kepada user lain di database-nya. Namun Pemilik objek tidak selalu memiliki otoritas yang tidak terbatas. 
+                Dalam model DAC, setiap objek dalam system yang dilindungi memiliki pemilik, dan pemilik memberikan akses kepada pengguna atas kebijakan mereka sendiri. DAC menyediakan control kasus per kasus atas sumber daya. Dari system ini memungkinkan penyebaran hak akses dapat dibatasi <b>Contoh:</b> pada MySQL user yang diberikan hak akses penuh dan hak option(grant option) dapat membagikan hak akses tertentu kepada user lain di database-nya. Namun Pemilik objek tidak selalu memiliki otoritas yang tidak terbatas. 
                 Dalam banyak sistem, administrator dan pengguna tingkat tinggi lainnya dapat menggantikan pemilik dan mengambil kepemilikan objek.
               </p>
-              <h3>Roled- Based Access Control (RBAC)</h3>
+              <h3>Roled-Based Access Control (RBAC).</h3>
               <p>
                 Dalam RBAC, hak akses diberikan berdasarkan peran atau fungsi bisnis yang ditentukan. Tujuannya adalah untuk memberi pengguna hanya data yang mereka butuhkan untuk melakukan pekerjaan mereka—dan tidak lebih. Misalkan ruangan manajer hanya dapat diakses oleh manajer itu sendiri, sedangkan karyawan tidak dapat mengakses ruangan tersebut. 
-                Contohnya pada MySQL setiap user diberikan peran tertentu untuk mengurus suatu database seperti mengunci database, mengupdate, atau juga user yang memiliki hak penuh di database. 
+                <b>Contoh:</b> pada MySQL setiap user diberikan peran tertentu untuk mengurus suatu database seperti mengunci database, mengupdate, atau juga user yang memiliki hak penuh di database. 
               </p>
-              <h3>Mandatory Access Control (MAC)</h3>
+              <h3>Mandatory Access Control (MAC).</h3>
               <p>
-                Dalam MAC, pengguna diberikan akses dalam bentuk izin dimana hak akses diberikan dan diatur oleh otoritas pusat  dan mengaturnya dalam tingkatan, yang secara seragam memperluas cakupannya. Contohnya user ‘root’ MySQL dapat memberikan privileges tertentu kepada user lain untuk mengurus database tertentu sesuia dengan job yang diberikan si user ‘root’.<br/>
+                Dalam MAC, pengguna diberikan akses dalam bentuk izin dimana hak akses diberikan dan diatur oleh otoritas pusat  dan mengaturnya dalam tingkatan, yang secara seragam memperluas cakupannya. <b>Contoh: </b> user ‘root’ MySQL dapat memberikan privileges tertentu kepada user lain untuk mengurus database tertentu sesuia dengan job yang diberikan si user ‘root’.<br/>
                 
                 Mandatory Acces Control adalah salah satu sistem akses paling aman, karena cukup tahan gangguan. Berbeda dengan RBAC, pengguna tidak dapat membuat perubahan. Pemeriksaan dan penegakan hak akses sepenuhnya otomatis. Ini meminjamkan Kontrol Akses Wajib tingkat kerahasiaan yang tinggi. Selain itu, sistem ini menawarkan tingkat integritas yang tinggi: Data tidak dapat dimodifikasi tanpa otorisasi yang tepat dan dengan demikian dilindungi dari gangguan.
               </p>
-              <h3>Attribute-Based Access Control (ABAC)</h3>
+              <h3>Attribute-Based Access Control (ABAC).</h3>
               <p>
                 Dalam ABAC, hak akses diberikan secara fleksibel berdasarkan kombinasi atribut dan kondisi lingkungan, seperti waktu dan lokasi. ABAC adalah model kontol akses paling terperinci dan membantu mengurangi jumlah penetapan peran.<br/>
-                Contoh di suatu database ada Atribute <b>Editor</b>, <b>Security</b> , dan <b>Manajemen</b>. <b>Editor</b> harus memilik akses mengubah, menghapus, dan membuat (ALTER, CREATE, DELETE), dan <b>Security</b>  harus memilik hak untuk melihat semua proses dan mengunci table (SHOW PROCESSLIST & LOCK TABLES) , dan <b>Manajemen</b> memiliki akses untuk memberikan hak-hak yang berkaitan tadi (OPTION PRIVILEGES). Berdasarkan atribut-atribut  tersebut admin/root dapat menerapkan kontrol akses terperinci berbasis kebijakan, menggunakan kombinasi atribut yang berbeda untuk menciptakan kondisi akses yang spesifik atau seluas yang diminta oleh situasi.
+                <b>Contoh:</b> di suatu database ada Atribute <b>Editor</b>, <b>Security</b> , dan <b>Manajemen</b>. <b>Editor</b> harus memilik akses mengubah, menghapus, dan membuat (ALTER, CREATE, DELETE), dan <b>Security</b>  harus memilik hak untuk melihat semua proses dan mengunci table (SHOW PROCESSLIST & LOCK TABLES) , dan <b>Manajemen</b> memiliki akses untuk memberikan hak-hak yang berkaitan tadi (OPTION PRIVILEGES). Berdasarkan atribut-atribut  tersebut admin/root dapat menerapkan kontrol akses terperinci berbasis kebijakan, menggunakan kombinasi atribut yang berbeda untuk menciptakan kondisi akses yang spesifik atau seluas yang diminta oleh situasi.
               </p>
 
 
